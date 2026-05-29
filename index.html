@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Arvind M — Software Engineer & ML Researcher</title>
+  <meta name="description"
+    content="Portfolio of Arvind M — Software Engineer specializing in ML systems, cloud-native applications, and full-stack development." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arvind M — Software Engineer & ML Researcher" />
+  <meta property="og:description" content="I build intelligent systems at the intersection of machine learning, cloud infrastructure, and full-stack engineering." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="favicon.svg" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Arvind M — Portfolio" />
+  <meta name="twitter:description" content="Software Engineer specializing in ML systems, cloud-native applications, and full-stack development." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="loading">
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AM</a>
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="https://drive.google.com/file/d/1nQq_um6p0Gm0xwzCqV2W14Ly6xHvOSfe/view?usp=sharing" target="_blank" class="btn btn-nav-resume">Resume</a>
+        <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+      </div>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="mobile-nav" class="mobile-nav">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Software Engineer &amp; ML Researcher</div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="hero-name">Arvind M</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span id="typing-text"></span><span class="typing-cursor">|</span>
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <a href="https://drive.google.com/file/d/1nQq_um6p0Gm0xwzCqV2W14Ly6xHvOSfe/view?usp=sharing" target="_blank" class="btn btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">7+</span>
+          <span class="stat-label">Major Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">Samsung</span>
+          <span class="stat-label">R&D Intern</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">VIT</span>
+          <span class="stat-label">Chennai</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an Electronics and Computer Engineering undergraduate with a strong interest in
+            building technology-driven solutions that combine software, data, and intelligent systems.
+            My experience spans <strong>full-stack development</strong>, <strong>cloud-native applications</strong>,
+            <strong>machine learning</strong>, <strong>computer vision</strong>, and <strong>backend systems</strong>,
+            giving me exposure to both software engineering and AI-focused problem solving.
+          </p>
+          <p>
+            Through internships, projects, and leadership experiences, I've worked on developing
+            scalable applications, analyzing system performance, building data-driven solutions,
+            and applying emerging technologies to real-world challenges. I enjoy learning across
+            domains, exploring new technologies, and understanding how different areas of software
+            and AI come together to create impactful products.
+          </p>
+          <p>
+            I'm particularly interested in opportunities that allow me to solve complex problems,
+            collaborate with talented teams, and continue growing as an engineer while exploring
+            the intersection of software, data, and intelligent systems.
+          </p>
+        </div>
+        <div class="about-education">
+          <h3 class="about-education-title">Education</h3>
+          <div class="education-card">
+            <div class="edu-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 10 3 12 0v-5" />
+              </svg>
+            </div>
+            <div>
+              <h4>Vellore Institute of Technology</h4>
+              <p class="edu-degree">B.Tech in Electronics and Computer Engineering</p>
+              <p class="edu-meta">Aug 2023 — Present · Chennai, India</p>
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="edu-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+              </svg>
+            </div>
+            <div>
+              <h4>DAV Senior Secondary School (CBSE)</h4>
+              <p class="edu-degree">Computer Science Student</p>
+              <p class="edu-meta">2016 — 2023 · Chennai, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="experience-card">
+        <div class="exp-header">
+          <div class="exp-company-block">
+            <div class="exp-company-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <!-- R&D building with antenna -->
+                <rect x="3" y="8" width="18" height="14" rx="1" />
+                <path d="M7 8V5a2 2 0 012-2h6a2 2 0 012 2v3" />
+                <path d="M12 3v-2" />
+                <path d="M10 1h4" />
+                <line x1="7" y1="12" x2="7" y2="12.01" />
+                <line x1="12" y1="12" x2="12" y2="12.01" />
+                <line x1="17" y1="12" x2="17" y2="12.01" />
+                <line x1="7" y1="16" x2="7" y2="16.01" />
+                <line x1="12" y1="16" x2="12" y2="16.01" />
+                <line x1="17" y1="16" x2="17" y2="16.01" />
+                <path d="M10 22v-4h4v4" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="exp-company">Samsung R&D Institute India — Bangalore</h3>
+              <p class="exp-role">Software Research Intern</p>
+            </div>
+          </div>
+          <div class="exp-meta">
+            <span class="exp-date">Aug 2025 — Jun 2026</span>
+            <span class="exp-location">Remote (VIT Chennai), India</span>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Benchmarked Spring Boot and WebFlux microservices on Kubernetes under production-scale workloads,
+            collecting latency, throughput, CPU, and memory metrics to build a large-scale performance dataset.</li>
+          <li>Built an end-to-end ML pipeline using XGBoost and data preprocessing workflows to train predictive models
+            on benchmark datasets, achieving 85%+ R² accuracy across core performance metrics.</li>
+          <li>Developed a scalable decision-support application for intelligent microservice framework selection,
+            integrating cloud-native systems, backend analytics, and ML-driven performance prediction.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">Kubernetes</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Microservices</span>
+          <span class="tag">ML Pipeline</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-filter" id="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="ml">ML & CV</button>
+        <button class="filter-btn" data-filter="tools">Tools & Platforms</button>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card" id="project-diabetes" data-category="fullstack">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <path d="M9 2h6v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V2z" />
+                <line x1="12" y1="10" x2="12" y2="16" />
+                <line x1="9" y1="13" x2="15" y2="13" />
+                <path d="M9 19h6" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Arvind007m" target="_blank" rel="noopener noreferrer"
+                class="project-link-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Clinical Diabetes Assessment Platform</h3>
+          <p class="project-desc">
+            Full-stack healthcare platform built for ICMR-NIE for therapeutic inertia detection and
+            personalized diabetes care. Features secure authentication, AES-256 encryption,
+            multilingual voice assistance, AI chatbot support, and automated PDF report generation.
+          </p>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>TypeScript</span>
+            <span>MongoDB</span>
+            <span>NextAuth</span>
+            <span>TailwindCSS</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" id="project-brain" data-category="ml">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C9 2 7 4 7 6c-2 0-4 1.5-4 4 0 2 1.5 3.5 3 4-.5 1.5 0 3.5 2 4.5 1.5 1 3 1.5 4 1.5" />
+                <path d="M12 2c3 0 5 2 5 4 2 0 4 1.5 4 4 0 2-1.5 3.5-3 4 .5 1.5 0 3.5-2 4.5-1.5 1-3 1.5-4 1.5" />
+                <path d="M12 2v18" />
+                <path d="M7 10h10" />
+                <path d="M8 14h8" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Arvind007m" target="_blank" rel="noopener noreferrer"
+                class="project-link-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">3D Brain Tumor Segmentation & Visualization</h3>
+          <p class="project-desc">
+            End-to-end 3D medical imaging pipeline for automated MRI brain tumor segmentation.
+            Converts NIfTI scans into optimized GLB models for interactive web-based rendering
+            and AR/VR integration using WebXR and A-Frame.
+          </p>
+          <div class="project-tech">
+            <span>MONAI</span>
+            <span>PyTorch</span>
+            <span>3D U-Net</span>
+            <span>FastAPI</span>
+            <span>WebXR</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" id="project-parking" data-category="ml">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 6V3h4" />
+                <path d="M18 3h4v3" />
+                <path d="M22 18v3h-4" />
+                <path d="M6 21H2v-3" />
+                <rect x="6" y="9" width="12" height="7" rx="2" />
+                <circle cx="9" cy="16" r="1" />
+                <circle cx="15" cy="16" r="1" />
+                <path d="M8 9l2-3h4l2 3" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Arvind007m" target="_blank" rel="noopener noreferrer"
+                class="project-link-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Intelligent Parking Slot Detection</h3>
+          <p class="project-desc">
+            Real-time computer vision system for parking slot occupancy detection using
+            YOLOv8 and Swin Transformer. Achieves 90.5% accuracy with optimized GPU inference
+            and a Flask-based web app for real-time video streaming and monitoring.
+          </p>
+          <div class="project-tech">
+            <span>PyTorch</span>
+            <span>YOLOv8</span>
+            <span>Swin Transformer</span>
+            <span>Flask</span>
+            <span>OpenCV</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" id="project-audio" data-category="fullstack">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" />
+                <path d="M19 10v2a7 7 0 01-14 0v-2" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+                <path d="M2 8v2M2 12v1" />
+                <path d="M22 8v2M22 12v1" />
+                <path d="M5 6v4M5 12v2" />
+                <path d="M19 6v4M19 12v2" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Arvind007m" target="_blank" rel="noopener noreferrer"
+                class="project-link-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Audio Scribing & Meeting Transcription</h3>
+          <p class="project-desc">
+            Full-stack transcription platform converting live audio streams into real-time meeting transcripts.
+            Features speaker diarization, session management, AI-generated summaries, and support for
+            both microphone input and browser tab audio capture.
+          </p>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>PostgreSQL</span>
+            <span>Prisma</span>
+            <span>WebSocket</span>
+            <span>Gemini AI</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" id="project-study" data-category="fullstack">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+                <path d="M5 8h3M5 12h2" />
+                <path d="M16 8h3M17 12h2" />
+                <circle cx="19" cy="3" r="1" fill="currentColor" stroke="none" />
+                <path d="M19 1v1M19 4v1M17.5 3h1M20 3h1" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Arvind007m" target="_blank" rel="noopener noreferrer"
+                class="project-link-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Personalized Study & Assessment Platform</h3>
+          <p class="project-desc">
+            Memory-first learning platform leveraging AI to transform study resources into
+            personalized quizzes, tutoring sessions, and adaptive learning experiences.
+            Uses active recall and spaced repetition with gamification and progress analytics.
+          </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Express.js</span>
+            <span>PostgreSQL</span>
+            <span>REST APIs</span>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" id="project-community" data-category="tools">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+                <path d="M12 7v-5" />
+                <path d="M12 2l5 2-5 2" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Arvind007m" target="_blank" rel="noopener noreferrer"
+                class="project-link-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Community Issue Reporting & Tracking</h3>
+          <p class="project-desc">
+            Web platform for reporting and tracking civic issues through interactive maps,
+            geolocation services, and filtering. Features citizen and admin dashboards,
+            issue lifecycle management, prioritization, and role-based access control.
+          </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>Leaflet</span>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card" id="project-ocr" data-category="ml">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 5V2h3" />
+                <path d="M19 2h3v3" />
+                <path d="M22 19v3h-3" />
+                <path d="M5 22H2v-3" />
+                <rect x="6" y="6" width="12" height="12" rx="1" />
+                <path d="M9 10h6" />
+                <path d="M9 13h4" />
+                <path d="M9 16h5" />
+              </svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Arvind007m" target="_blank" rel="noopener noreferrer"
+                class="project-link-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Multilingual Object & Text Detection</h3>
+          <p class="project-desc">
+            Intelligent computer vision system detecting objects and extracting multilingual text
+            from images in real time. Uses a dual-OCR pipeline comparing EasyOCR and TesseractOCR
+            outputs to select the most accurate extraction across diverse languages and conditions.
+          </p>
+          <div class="project-tech">
+            <span>YOLO</span>
+            <span>EasyOCR</span>
+            <span>TesseractOCR</span>
+            <span>OpenCV</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">Java</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">TypeScript</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">R</span>
+            <span class="skill-chip">MATLAB</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill-chip">React</span>
+            <span class="skill-chip">Next.js</span>
+            <span class="skill-chip">Express.js</span>
+            <span class="skill-chip">FastAPI</span>
+            <span class="skill-chip">Flask</span>
+            <span class="skill-chip">PyTorch</span>
+            <span class="skill-chip">Prisma</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+            </svg>
+            <h3>Cloud & Tools</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill-chip">AWS EC2</span>
+            <span class="skill-chip">AWS S3</span>
+            <span class="skill-chip">AWS Lambda</span>
+            <span class="skill-chip">Kubernetes</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+            </svg>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">MongoDB</span>
+            <span class="skill-chip">MySQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05</span>
+        <h2 class="section-title">Leadership</h2>
+      </div>
+      <div class="experience-card">
+        <div class="exp-header">
+          <div class="exp-company-block">
+            <div class="exp-company-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                <path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="exp-company">Vellore Institute of Technology</h3>
+              <p class="exp-role">Programme Representative, ECM</p>
+            </div>
+          </div>
+          <div class="exp-meta">
+            <span class="exp-date">Aug 2024 — Sep 2025</span>
+            <span class="exp-location">Chennai, India</span>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Elected as Programme Representative for 300+ students in the ECM branch, acting as the primary liaison between students and faculty.</li>
+          <li>Organized academic updates, represented student concerns in official meetings, and streamlined communication across the department.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag">Leadership</span>
+          <span class="tag">Communication</span>
+          <span class="tag">Student Governance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-intro">
+          I'm always open to discussing new projects, research collaborations, or opportunities.
+          Feel free to reach out.
+        </p>
+        <div class="contact-grid">
+          <a href="mailto:arvindmadhan.007m@gmail.com" class="contact-card" id="contact-email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 7l-10 6L2 7" />
+            </svg>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">arvindmadhan.007m@gmail.com</span>
+          </a>
+          <a href="tel:+919444822935" class="contact-card" id="contact-phone">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91-9444822935</span>
+          </a>
+          <a href="https://linkedin.com/in/arvind-madhan" target="_blank" rel="noopener noreferrer" class="contact-card"
+            id="contact-linkedin">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">arvind-madhan</span>
+          </a>
+          <a href="https://github.com/Arvind007m" target="_blank" rel="noopener noreferrer" class="contact-card"
+            id="contact-github">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">Arvind007m</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">Designed & built by Arvind M</p>
+      <p class="footer-year">&copy; <span id="footer-year"></span></p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
