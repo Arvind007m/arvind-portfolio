@@ -283,12 +283,190 @@ strong {
   align-items: center;
   background: var(--bg-hero);
   padding: 120px 24px 80px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
-  max-width: var(--container-max);
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-text {
+  flex: 1.2;
+  max-width: 620px;
+}
+
+.hero-visual {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: visualFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes visualFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Code Terminal Window Stylings */
+.code-terminal {
+  width: 100%;
+  background: rgba(26, 26, 26, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg), 0 30px 60px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: rgba(18, 18, 18, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-red {
+  background: #ff5f56;
+}
+
+.dot-yellow {
+  background: #ffbd2e;
+}
+
+.dot-green {
+  background: #27c93f;
+}
+
+.terminal-title {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.terminal-lang {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.terminal-body {
+  padding: 20px;
+}
+
+.code-editor {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #e8e8e3;
+  overflow-x: auto;
+  border-bottom: none;
+}
+
+/* Syntax Highlighting */
+.code-editor .keyword {
+  color: #ff7b72;
+}
+
+.code-editor .class-name {
+  color: #79c0ff;
+}
+
+.code-editor .function-name {
+  color: #d2a8ff;
+}
+
+.code-editor .number {
+  color: #f0883e;
+}
+
+.code-editor .string {
+  color: #a5d6ff;
+}
+
+.code-editor .comment {
+  color: #8b949e;
+  font-style: italic;
+}
+
+/* Console block */
+.terminal-console {
+  padding: 16px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.console-line {
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 6px;
+}
+
+.console-line .prompt {
+  color: var(--accent);
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+.console-line.console-active {
+  color: #e8e8e3;
+}
+
+.console-output {
+  color: #87c38f;
+  white-space: pre-line;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.console-output .output-log {
+  margin-bottom: 4px;
+  animation: consoleLineFadeIn 0.3s ease-out forwards;
+}
+
+@keyframes consoleLineFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-badge {
@@ -669,8 +847,9 @@ section {
 .project-card-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 20px;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .project-icon {
@@ -710,7 +889,7 @@ section {
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -0.02em;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   line-height: 1.3;
 }
 
@@ -1022,6 +1201,15 @@ section {
   .stat-divider {
     display: none;
   }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .hero-visual {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1125,8 +1313,15 @@ section {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 /* ========================================
