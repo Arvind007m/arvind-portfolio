@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '.experience-card',
       '.project-card',
       '.skill-category',
+      '.cert-card',
       '.contact-intro',
       '.contact-card',
     ];
@@ -94,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Add stagger containers
-    document.querySelectorAll('.projects-grid, .skills-grid, .contact-grid').forEach(el => {
+    document.querySelectorAll('.projects-grid, .skills-grid, .certifications-grid, .contact-grid').forEach(el => {
       el.classList.add('reveal-stagger');
     });
   };
