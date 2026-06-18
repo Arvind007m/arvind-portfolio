@@ -61,12 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileBtn.addEventListener('click', () => {
       mobileBtn.classList.toggle('active');
       mobileNav.classList.toggle('open');
+      navbar.classList.toggle('mobile-open');
     });
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileBtn.classList.remove('active');
         mobileNav.classList.remove('open');
+        navbar.classList.remove('mobile-open');
       });
     });
   }
